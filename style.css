@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Unlock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Unlock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unlock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unlock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 100px; */
+}
+
+body {
+  margin: 0px;
+  background-color: black;
+  animation: fadeIn 3s linear;
+}
+
+section {
+  scroll-snap-align: start;
+}
+header {
+  background-color: black;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  border-color: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  /* opacity: 0.7; */
+  box-sizing: border-box;
+}
+
+.brand {
+}
+
+.brand h2 {
+  font-family: "Goblin One";
+  color: rgb(235, 235, 235);
+  justify-self: flex-end;
+}
+
+.brandbtn {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-self: center;
+  justify-self: end;
+  gap: 40px;
+}
+
+.normbar nav,
+.normbar .brand {
+  animation: slideLeft 2s linear;
+}
+
+.sidebar nav,
+.sidebar .brand {
+  animation: slideRight 0.2s linear;
+}
+
+nav a {
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main {
+  background: linear-gradient(rgba(83, 75, 75, 0.329), rgba(0, 0, 0, 0.059)),
+    url("Images/taxi-driver-getting-ready-customer.jpg");
+  background-repeat: no-repeat;
+  /* opacity: 0.9; */
+  background-size: cover;
+  height: 640px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 210px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.main h1,
+.main h4,
+.main a {
+  font-family: "Ubuntu";
+  color: rgb(255, 253, 253);
+  margin: none;
+}
+
+.main h1,
+.main h4
+ {
+  animation: slideUp 3s ease-in-out;
+  animation-timeline: view();
+}
+
+.main a {
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  padding: 15px 20px 15px 20px;
+  animation: slideUpNor 3s ease-in-out;
+  animation-timeline: view();
+}
+
+.main h1 {
+  font-size: 65px;
+}
+
+.main h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.flexing {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 250px;
+  margin-bottom: 350px;
+}
+
+
+.flexing h1 {
+  font-family: "Poppins";
+  font-size: 35px;
+  align-self: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 210px;
+  margin-top: 150px;
+  animation: slideUp 2.5s linear;
+  /* animation-timeline: view(); */
+}
+
+.flexing b {
+  font-family: "Goblin One";
+}
+
+.a .fleximg,
+.b .fleximg {
+  width: 45%;
+}
+
+.a .fleximg
+.b .fleximg {
+  margin-right: 50px;
+}
+
+
+
+.a .fleximg img,
+.b .fleximg img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.flex:last-child {
+  flex-direction: row-reverse;
+}
+
+
+.desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc h3 {
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+.desc p {
+  display: flex;
+  font-family: "Poppins";
+}
+
+.desc li {
+  font-family: "Poppins";
+  font-size: 26px;
+}
+
+.testi {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  padding-top: 150px;
+}
+
+.testigroup {
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.testibox {
+  width: 31%;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.testimg {
+  width: 100%;
+  margin-top: 10px;
+  height: 52%;
+}
+
+.testimg img {
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.testibox p,
+h6 {
+  font-family: "Poppins";
+  color: white;
+}
+
+.faqer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faq {
+  max-width: 800px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  /* min-height: 100vh; */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #fff;
+}
+
+.faqer {
+  margin-bottom: 150px;
+}
+
+.faq svg {
+  justify-self: end;
+}
+
+.faq h1 {
+  margin-top: 150px;
+  margin-bottom: 120px;
+  font-size: 42px;
+  color: white;
+  align-self: center;
+}
+
+.faq h3 {
+  font-family: "Poppins";
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: inherit;
+}
+
+.question h3 {
+  font-size: 1.8rem;
+  color: rgb(231, 231, 231);
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  color: rgb(231, 231, 231);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.faq:active .answer {
+  max-height: 300px;
+}
+
+.faq:active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+
+.footbox {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.footbox a {
+  text-decoration: none;
+  color: black;
+}
+
+.footbox a:hover {
+  text-decoration: underline;
+}
+
+.buttonbox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.button a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.button a {
+  border: 2px solid black;
+  padding: 7px;
+  padding-top: 12px;
+  color: black;
+}
+
+.button {
+  transition: all 0.3s ease-in-out;
+}
+
+.button a:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.button:hover {
+  transform: translateY(-8px);
+  filter: invert(1);
+}
+
+.lobby {
+  background: linear-gradient(rgba(83, 75, 75, 0.329), rgba(0, 0, 0, 0.059)),
+    url("Images/Aura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lobby h1 {
+  font-family: "Ubuntu";
+  color: rgb(255, 253, 253);
+  margin: none;
+  font-size: 65px;
+  animation: slideUp 1.5s linear;
+}
+
+.serves {
+  height: 1050px;
+  background-color: white;
+  padding: 100px 50px 120px 50px;
+  margin-bottom: 250px;
+  margin-top: 250px;
+}
+
+.serveimg {
+  width: 20%;
+  height: fit-content;
+  animation: slideUp 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.serveimg img {
+  width: 100%;
+}
+
+.servegroup {
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+}
+
+.servebox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servdesc {
+  animation: slideLeft 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  /* background-color: rgb(232, 232, 232); */
+  padding: 25px;
+  /* border-radius: 20px; */
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.servdesc button {
+  width: 120px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  transition: 0.2s linear;
+  font-family: "Ubuntu";
+}
+
+.servdesc button:hover {
+  filter: invert();
+}
+
+/* .servdesc button:active {
+  
+} */
+
+.servdesc h3 {
+  font-family: "Ubuntu";
+}
+
+.servdesc p {
+  font-family: "Montserrat";
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 200px;
+  padding: 100px 30px 120px 30px;
+  padding-bottom: 120px;
+  margin-bottom: 200px;
+}
+
+.contact h1, .contact h3 {
+  color: rgb(44, 44, 44);
+  font-family: "Poppins";
+}
+
+.contact h1 {
+  font-size: 50px;
+}
+
+.contactimg {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+
+.contactimg img {
+  animation: idle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  width: 100%;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 80%;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.sign {
+  margin-top: 250px;
+  height: 80vh;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  padding-top: 125px;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 250px;
+
+}
+
+.sign h1 {
+  font-family: "Poppins";
+  font-size: 38px;
+  margin-bottom: 165px;
+}
+
+.requgroup {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.requbox h3 {
+  font-family: "Ubuntu";
+}
+
+.requbox li {
+  font-family: "Montserrat";
+
+}
+
+.requbox ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.apply {
+  background-color: white;
+  height: 55vh;
+  align-items: center;
+  margin-bottom: 250px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.applybox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 30px;
+}
+
+
+.applyimg img {
+  border-radius: 20px;
+}
+
+.applybox h3 {
+  font-family: "Poppins";
+  font-size: 38px;
+}
+
+
+.applybox button {
+  font-family: "Montserrat";
+  background-color: rgb(29, 29, 29);
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  transition: all 0.3s linear;
+  color: white;
+}
+
+.applybox button:hover {
+  filter: invert();
+  transform: translateY(-10px);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(146, 146, 146);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.6);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 150px;
+}
+
+.sidebar .brand h2 {
+  font-size: 40px;
+}
+
+
+
+
+.sidebar nav {
+  flex-direction: column;
+  gap: 80px;
+}
+
+.sidebar nav a {
+  width: 100%;
+  font-size: 29px;
+}
+
+header svg {
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideUpNor {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(100px);
+  }to {
+    transform:translateX(0px)
+  }
+}
+@keyframes idle {
+  0%{
+   transform:rotate(30deg);
+  }
+  50% {
+    transform:rotate(-30deg);
+  }
+  100%{
+    transform:rotate(30deg);
+  }
+}
+
